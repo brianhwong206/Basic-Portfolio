@@ -15,10 +15,11 @@
     font-size: 2em;
     padding: 10px;
     margin-bottom: 5px;
+    border-radius: 15px;
 }
 
 
-h2 {
+h2, {
     clear:both;
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -32,8 +33,12 @@ body{
     color:#777777;
 }
 
-footer{
+.footer{
     clear:both;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     border-top: 10px solid #4aaaa5;
     background-color: #666666;
     color: #ffffff;
@@ -122,16 +127,20 @@ input[type=button]{
 
 input[type=text],
 input[type=email]{
+    padding-top: 5px;
     padding-left:10px;
-    margin-left:10px;
     width: 95%;
-    height:20px;
+    height:35px;
 }
 
 textarea{
+    max-width: 95%;
+    min-width: 95%;
     width: 95%;
-    height: 50px;
-    margin-left:10px;
+    min-height: 75px;
+    max-height: 200px;
+    height: 75px;
+    padding-top: 5px;
     padding-left:10px;
 }
 
@@ -147,18 +156,23 @@ textarea{
 .grid-item{
     border: 2px solid black;
     max-width: 375px;
+    max-height: 225px;
     align-self: center;
     justify-self: center;
-    padding: 5px;
+    position: relative;
+    padding-top:3px;
 }
 
 .grid-item-caption {
-    position: relative;
+    position: absolute;
     background-color: #4aaaa5;
-    top: 10px;
-    max-width: 200px;
+    bottom: 30px;
+    width: 100%;
+    max-width: 350px;
     max-height: 50px;
-    
-
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffffff;
 }
 
